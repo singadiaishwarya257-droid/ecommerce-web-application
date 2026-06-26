@@ -1,0 +1,499 @@
+/* ==========================================
+   Global Styles
+   ========================================== */
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --light-bg: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #374151;
+    background-color: #ffffff;
+}
+
+/* ==========================================
+   Hero Section
+   ========================================== */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    padding: 80px 0 !important;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .lead {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   Navigation
+   ========================================== */
+.navbar {
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ==========================================
+   Product Cards
+   ========================================== */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    background-color: var(--light-bg);
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--danger-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.product-card-body {
+    padding: 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-category {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-rating {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.product-rating .fa-star {
+    color: var(--warning-color);
+    margin-right: 2px;
+}
+
+.product-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.product-price .current-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.product-price .original-price {
+    font-size: 1rem;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.product-footer {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.product-footer button {
+    flex: 1;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-add-cart {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+}
+
+.btn-add-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.btn-wishlist {
+    border: 2px solid var(--border-color);
+    background: white;
+    color: #6b7280;
+}
+
+.btn-wishlist:hover {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+/* ==========================================
+   Search & Filter Section
+   ========================================== */
+.form-control, .form-select {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* ==========================================
+   Cart Page
+   ========================================== */
+.cart-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    transition: all 0.2s ease;
+}
+
+.cart-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.cart-item-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.cart-item-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.quantity-selector button {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quantity-selector button:hover {
+    background: var(--light-bg);
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.btn-remove {
+    background: var(--danger-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-remove:hover {
+    background: #dc2626;
+}
+
+/* ==========================================
+   Order Summary Card
+   ========================================== */
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.4);
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+footer {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    border-top: 1px solid var(--border-color);
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* ==========================================
+   Animations
+   ========================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart-item {
+    animation: slideUp 0.3s ease-out;
+}
+
+/* ==========================================
+   Modal Styles
+   ========================================== */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--light-bg);
+}
+
+.modal-header .btn-close {
+    filter: var(--bs-btn-close-focus-shadow);
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-item-image {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .card.sticky-top {
+        position: relative;
+        top: 0 !important;
+        margin-top: 20px;
+    }
+
+    .product-price .current-price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 40px 0 !important;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-footer {
+        flex-direction: column;
+    }
+
+    .product-footer button {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   Utility Classes
+   ========================================== */
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-white-50:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ==========================================
+   Toast Notifications
+   ========================================== */
+.toast {
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    min-width: 300px;
+}
+
+.toast-body {
+    padding: 16px;
+    font-weight: 600;
+}
+
+.toast-body i {
+    margin-right: 8px;
+}

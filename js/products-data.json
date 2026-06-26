@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "category": "Electronics",
+      "price": 129.99,
+      "originalPrice": 199.99,
+      "rating": 4.5,
+      "reviews": 328,
+      "description": "Premium noise-cancelling wireless headphones with 30-hour battery life",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
+      "discount": 35
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch Pro",
+      "category": "Electronics",
+      "price": 299.99,
+      "originalPrice": 449.99,
+      "rating": 4.8,
+      "reviews": 562,
+      "description": "Advanced fitness tracking with heart rate monitor and GPS",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+      "discount": 33
+    },
+    {
+      "id": 3,
+      "name": "Camera Backpack",
+      "category": "Home",
+      "price": 79.99,
+      "originalPrice": 119.99,
+      "rating": 4.6,
+      "reviews": 245,
+      "description": "Durable waterproof backpack perfect for photographers on the go",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
+      "discount": 33
+    },
+    {
+      "id": 4,
+      "name": "Premium Running Shoes",
+      "category": "Sports",
+      "price": 149.99,
+      "originalPrice": 219.99,
+      "rating": 4.7,
+      "reviews": 431,
+      "description": "Lightweight and comfortable running shoes with advanced cushioning",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+      "discount": 32
+    },
+    {
+      "id": 5,
+      "name": "Elegant Leather Jacket",
+      "category": "Fashion",
+      "price": 249.99,
+      "originalPrice": 399.99,
+      "rating": 4.4,
+      "reviews": 189,
+      "description": "Classic leather jacket in multiple colors, perfect for any season",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=400&h=400&fit=crop",
+      "discount": 37
+    },
+    {
+      "id": 6,
+      "name": "Portable Power Bank",
+      "category": "Electronics",
+      "price": 49.99,
+      "originalPrice": 79.99,
+      "rating": 4.5,
+      "reviews": 678,
+      "description": "20000mAh power bank with fast charging support for all devices",
+      "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=400&fit=crop",
+      "discount": 37
+    },
+    {
+      "id": 7,
+      "name": "Stainless Steel Water Bottle",
+      "category": "Sports",
+      "price": 34.99,
+      "originalPrice": 54.99,
+      "rating": 4.6,
+      "reviews": 512,
+      "description": "Insulated water bottle keeps drinks hot for 12 hours or cold for 24 hours",
+      "image": "https://images.unsplash.com/photo-1602143407151-7e406cab6cd1?w=400&h=400&fit=crop",
+      "discount": 36
+    },
+    {
+      "id": 8,
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "price": 39.99,
+      "originalPrice": 64.99,
+      "rating": 4.3,
+      "reviews": 291,
+      "description": "Ergonomic wireless mouse with precision tracking and long battery life",
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop",
+      "discount": 38
+    },
+    {
+      "id": 9,
+      "name": "Minimalist Desk Lamp",
+      "category": "Home",
+      "price": 59.99,
+      "originalPrice": 99.99,
+      "rating": 4.7,
+      "reviews": 423,
+      "description": "LED desk lamp with adjustable brightness and color temperature",
+      "image": "https://images.unsplash.com/photo-1565636192335-14f82e7dba4a?w=400&h=400&fit=crop",
+      "discount": 40
+    },
+    {
+      "id": 10,
+      "name": "Yoga Mat Pro",
+      "category": "Sports",
+      "price": 44.99,
+      "originalPrice": 74.99,
+      "rating": 4.8,
+      "reviews": 356,
+      "description": "Non-slip eco-friendly yoga mat with carrying strap and alignment markers",
+      "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400&h=400&fit=crop",
+      "discount": 40
+    },
+    {
+      "id": 11,
+      "name": "Vintage Sunglasses",
+      "category": "Fashion",
+      "price": 89.99,
+      "originalPrice": 149.99,
+      "rating": 4.6,
+      "reviews": 267,
+      "description": "UV protected vintage-style sunglasses with premium lens quality",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
+      "discount": 40
+    },
+    {
+      "id": 12,
+      "name": "Coffee Maker Deluxe",
+      "category": "Home",
+      "price": 169.99,
+      "originalPrice": 269.99,
+      "rating": 4.5,
+      "reviews": 198,
+      "description": "Programmable coffee maker with thermal carafe and automatic brew system",
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02ae2a0e?w=400&h=400&fit=crop",
+      "discount": 37
+    }
+  ]
+}
