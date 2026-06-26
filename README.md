@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ShopHub - E-Commerce Web Application
 
 A modern, fully-functional e-commerce web application built with **HTML5**, **CSS3**, **Bootstrap 5**, and **JavaScript**. This is a Minimum Viable Product (MVP) that demonstrates a complete shopping experience without backend dependencies.
@@ -241,3 +242,7 @@ For issues or questions, please check the code comments in:
 **Made with ❤️ - ShopHub E-Commerce MVP 2026**
 
 Enjoy building and customizing your e-commerce platform!
+=======
+# ecommerce-web-application
+simple e-commerce web Application
+>>>>>>> origin/main
